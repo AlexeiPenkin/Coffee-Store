@@ -1,82 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
-	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lexend:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>FIGMA | Макеты для верстки — Верстка страницы</title>
+    <meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
 </head>
+
 <body>
-		<!-- Начало: Данный блок удалять нельзя -->
-		<style>
-			.maketforfigma{
-				flex: 0 0 auto;
-				/*background: #303b44;*/
-				/*background: #5CDB95;*/
-				background: #313a46;
-				font-weight: bold;
-				display: flex;
-			}
-			.maketforfigma img{
-				border-radius: 10px;
-				margin: 4px 0 0 4px;
-			}
-			.maketforfigma p {
-				/*color: #fff;*/
-				/*color: #05386B;*/
-				color: #98a6ad;
-				text-decoration: none;
-				letter-spacing: .01875rem;
-				font-size: .775rem;
-				padding: 0 10px;
-				line-height: 0.70rem;
-			}
+    <!-- Начало: Данный блок удалять нельзя -->
+    <style>
+        .maketforfigma {
+            flex: 0 0 auto;
+            /*background: #303b44;*/
+            /*background: #5CDB95;*/
+            background: #313a46;
+            font-weight: bold;
+            display: flex;
+        }
 
-			.maketforfigma p > a {
-				/*color: #08ff00;*/
-				/*color: #EDF5E1;*/
-				color: #bbe4f0;
-				font-weight: bold;
-			}
-			.maketforfigma p > a:hover {
-				/*color: #ffa001*/
-				/*color: #379683*/
-				color: #ffffff
-			}
+        .maketforfigma img {
+            border-radius: 10px;
+            margin: 4px 0 0 4px;
+        }
 
-			.main{
-				flex: 1 0 auto;
-			}
+        .maketforfigma p {
+            /*color: #fff;*/
+            /*color: #05386B;*/
+            color: #98a6ad;
+            text-decoration: none;
+            letter-spacing: .01875rem;
+            font-size: .775rem;
+            padding: 0 10px;
+            line-height: 0.70rem;
+        }
 
-			html{
-				height: 100%;
-			}
+        .maketforfigma p>a {
+            /*color: #08ff00;*/
+            /*color: #EDF5E1;*/
+            color: #bbe4f0;
+            font-weight: bold;
+        }
 
-			body{
-				display: flex;
-				flex-direction: column;
-				height: 100%;
-				padding: 0;
-				margin: 0;
-			}
-		</style>
-		<div class="maketforfigma">
-			<a href="https://t.me/s/FigmaToHTML" target="_blank">
-				<img src="logo.png">
-			</a>
-			<div>
-				<p>
-					Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML/2" target="_blank">FIGMA | Макеты для верстки</a>
-				</p>
-				<p>
-					При помощи бота <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">FIGMA | 💵 Верстай за деньги</a> пользователь получил оплату за верстку этого сайта и попал в рейтинги сайта
-					<a href="https://maketforfigma.ru" target="_blank">FIGMA — Макеты для верстки</a>
-				</p>
-			</div>
-		</div>
-		<!-- Конец -->
+        .maketforfigma p>a:hover {
+            /*color: #ffa001*/
+            /*color: #379683*/
+            color: #ffffff
+        }
 
-		<div class="main">
-			В данном блоке размещается верстка
-		</div>
+        .main {
+            flex: 1 0 auto;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <div class="maketforfigma">
+        <a href="https://t.me/s/FigmaToHTML" target="_blank">
+            <img src="logo.png">
+        </a>
+        <div>
+            <p>
+                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a
+                    href="https://t.me/s/FigmaToHTML/2" target="_blank">FIGMA | Макеты для верстки</a>
+            </p>
+            <p>
+                При помощи бота <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">FIGMA | 💵 Верстай
+                    за деньги</a> пользователь получил оплату за верстку этого сайта и попал в рейтинги сайта
+                <a href="https://maketforfigma.ru" target="_blank">FIGMA — Макеты для верстки</a>
+            </p>
+        </div>
+    </div>
+    <!-- Конец -->
+
+    <header class="header">
+        <div class="header__container">
+            <img src="./img/header_logo.svg" alt="icon" class="header__logo">
+            <img src="./img/header_divider.png" alt="icon" class="header__divider">
+            <nav class="header__navbar">
+                <ul class="header__navbar-links">
+                    <li><a href="#" class="header__navbar-link">Shop</a></li>
+                    <li><a href="#" class="header__navbar-link">Menu</a></li>
+                    <li><a href="#" class="header__navbar-link">Rewards</a></li>
+                    <li><a href="#" class="header__navbar-link">Contact</a></li>
+                    <li><a href="#" class="header__navbar-link">Subscriptions</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__find-btn">
+                <img src="./img/map_marker.svg" alt="icon" class="map__marker">
+                <a href="#" class="header__find-btn-link">Find Store</a>
+            </div>
+
+            <img src="./img/header_shopping-bag.svg" alt="icon" class="header__shopping-bag">
+
+            <img src="./img/header_user-profile.svg" alt="icon" class="header__user-profile">
+        </div>
+        <img src="./img/header_line.png" alt="img" class="header__line">
+    </header>
+
+    <main class="main">
+
+        <section class="intro">
+            <img src="./img/intro_background.png" alt="img" class="intro__background">
+            <div class="intro__container">
+                <h1 class="intro__title">
+                    Serve coffee for you on every morning
+                </h1>
+
+                <p class="intro__text">
+                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                    visual form.
+                </p>
+
+                <button class="intro__products-btn">See all Products
+                    <img src="./img/intro_button-icon.svg" alt="icon" class="intro__buton-icon">
+                </button>
+            </div>
+        </section>
+
+        <section class="companies">
+            <div class="companies__wrapper">
+                <span class="companies__span">Featured on:</span>
+                <div class="companies__items">
+                    <div class="companies__item first"></div>
+                    <div class="companies__item second"></div>
+                    <div class="companies__item thrid"></div>
+                    <div class="companies__item forth"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <img src="./img/about_background.svg" alt="img" class="about__background">
+            <div class="about__wrapper">
+                <span class="about__span">About us</span>
+
+                <h2 class="about__heading">
+                    We serve the coffee. You chill in the hommy
+                </h2>
+
+                <p class="avout__text">
+                    Everything we do is rooted in that basic concept. It’s what drives us. It’s what moves us, motivates
+                    us and keeps us excited about every decision we make about our products, our services and all that
+                    we do in the community. We are coffee passionate.
+                </p>
+
+                <p class="about__ref">
+                    <a href="#" class="about__link">
+                        Read Full Story
+                    </a>
+                    <img src="./img/about_link-arrow.png" alt="icon" class="about__link-arrow">
+                </p>
+            </div>
+        </section>
+
+        <section class="products">
+            <img src="./img/products_line.png" alt="img" class="products__line">
+
+            <div class="products__title-wrapper">
+                <h2 class="products__title">Our Products</h2>
+                <p class="products__ref">
+                    <a href="#" class="products__link">
+                        See all Products
+                    </a>
+                    <img src="./img/products_link-arrow.png" alt="icon" class="products__link-arrow">
+                </p>
+            </div>
+
+            <div class="products__cards">
+                <div class="products__card one">
+                    <img src="./img/products_card-img.png" alt="img" class="products__card-img">
+                    <h3 class="products__card-heading">Almond Love Coffee</h3>
+                    <p class="products__card-price">$14.50</p>
+                    <button class="products__card-button one">View Product</button>
+                </div>
+
+                <div class="products__card two">
+                    <img src="./img/products_card-img.png" alt="img" class="products__card-img">
+                    <h3 class="products__card-heading">Billy Goat Breakfast</h3>
+                    <p class="products__card-price">$16.50</p>
+                    <button class="products__card-button">View Product</button>
+                </div>
+
+                <div class="products__card three">
+                    <img src="./img/products_card-img.png" alt="img" class="products__card-img">
+                    <h3 class="products__card-heading">Tarrazu Costa Rica</h3>
+                    <p class="products__card-price">$15.00</p>
+                    <button class="products__card-button">View Product</button>
+                </div>
+
+                <div class="products__card four">
+                    <img src="./img/products_card-img.png" alt="img" class="products__card-img">
+                    <h3 class="products__card-heading">Highlander Grog</h3>
+                    <p class="products__card-price">$15.00</p>
+                    <button class="products__card-button">View Product</button>
+                </div>
+
+                <div class="products__card five">
+                    <img src="./img/products_card-img.png" alt="img" class="products__card-img">
+                    <h3 class="products__card-heading">Lucky 7 Espresso</h3>
+                    <p class="products__card-price">$14.50</p>
+                    <button class="products__card-button">View Product</button>
+                </div>
+
+                <div class="products__card six">
+                    <img src="./img/products_card-img.png" alt="img" class="products__card-img">
+                    <h3 class="products__card-heading">Jamaican Island</h3>
+                    <p class="products__card-price">$16.50</p>
+                    <button class="products__card-button">View Product</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <h3 class="benefits__subtitle">THE BENEFITS</h3>
+            <h2 class="benefits__title">Why buy coffee from us</h2>
+            <div class="benefits__cards">
+                <div class="benefits__card">
+                    <img src="./img/benefits_original-coffee-icon.png" alt="icon" class="benefits__card-icon">
+                    <div class="benefits__card-info">
+                        <h4 class="card-info__heading">Original coffee</h4>
+                        <div class="card-info__text">
+                            Lorem ipsum is typically a corrupted version of 'De finibus bonorum et malorum
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefits__card">
+                    <img src="./img/benefits_cancel-icon.png" alt="icon" class="benefits__card-icon">
+                    <div class="benefits__card-info">
+                        <h4 class="card-info__heading">Original coffee</h4>
+                        <div class="card-info__text">
+                            Lorem ipsum is typically a corrupted version of 'De finibus bonorum et malorum
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefits__card">
+                    <img src="./img/benefits_free-shipping-icon.png" alt="icon" class="benefits__card-icon">
+                    <div class="benefits__card-info">
+                        <h4 class="card-info__heading">Original coffee</h4>
+                        <div class="card-info__text">
+                            Lorem ipsum is typically a corrupted version of 'De finibus bonorum et malorum
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefits__card">
+                    <img src="./img/benefits_various-coffee-icon.png" alt="icon" class="benefits__card-icon">
+                    <div class="benefits__card-info">
+                        <h4 class="card-info__heading">Original coffee</h4>
+                        <div class="card-info__text">
+                            Lorem ipsum is typically a corrupted version of 'De finibus bonorum et malorum
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h3 class="gallery__subtitle">GALLERY</h3>
+            <h2 class="gallery__title">Featured Coffee Gallery</h2>
+            <div class="gallery__cards">
+                <div class="gallery__card"></div>
+                <div class="gallery__card"></div>
+                <div class="gallery__card"></div>
+                <div class="gallery__card"></div>
+                <div class="gallery__card"></div>
+                <div class="gallery__card"></div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2 class="faq__title">Frequently ask question</h2>
+            <p class="faq__text">
+                Lorem ipsum is typically a corrupted version of 'De finibus bonorum et malorum
+            </p>
+
+            <div class="faq__dropdown-menus">
+                <div class="dropdown-menu__wrapper left">
+                    <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
+                        <svg xmlns="http://www.w3.org/2000/svg">
+                            <symbol viewBox="0 0 24 24" id="expand-more">
+                                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                                <path d="M0 0h24v24H0z" fill="none" />
+                            </symbol>
+                            <symbol viewBox="0 0 24 24" id="close">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                                <path d="M0 0h24v24H0z" fill="none" />
+                            </symbol>
+                        </svg>
+                    </div>
+
+                    <details class="dropdown-menu__form">
+                        <summary class="menu-label-wrapper">
+                            What is the difference between Free & Paid?
+                            <svg class="control-icon control-icon-expand" width="32" height="32" role="presentation">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+                            </svg>
+                            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+                            </svg>
+                        </summary>
+                        <p class="menu-text">Free version contains a limited amount of pre-designed blocks in comparison
+                            to Pro
+                            version with more than 100 blocks.</p>
+                    </details>
+
+                    <details class="dropdown-menu__form">
+                        <summary class="menu-label-wrapper">
+                            Can I request a refund money?
+                            <svg class="control-icon control-icon-expand" width="32" height="32" role="presentation">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+                            </svg>
+                            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+                            </svg>
+                        </summary>
+                        <p class="menu-text">Yes, you can request a refund money.</p>
+                    </details>
+
+                    <details class="dropdown-menu__form">
+                        <summary class="menu-label-wrapper">
+                            Why my coffee is not arrived until now?
+                            <svg class="control-icon control-icon-expand" width="32" height="32" role="presentation">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+                            </svg>
+                            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+                            </svg>
+                        </summary>
+                        <p class="menu-text">Your coffee is not arrived because...</p>
+                    </details>
+                </div>
+
+                <div class="dropdown-menu__wrapper right">                    
+                    <details class="dropdown-menu__form">
+                        <summary class="menu-label-wrapper">
+                            How long shipping process goes to my place?
+                            <svg class="control-icon control-icon-expand" width="32" height="32" role="presentation">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+                            </svg>
+                            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+                            </svg>
+                        </summary>
+                        <p class="menu-text">Shipping process goes X-days to your place.</p>
+                    </details>
+
+                    <details class="dropdown-menu__form">
+                        <summary class="menu-label-wrapper">
+                            Can I request more coffee?
+                            <svg class="control-icon control-icon-expand" width="32" height="32" role="presentation">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+                            </svg>
+                            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+                            </svg>
+                        </summary>
+                        <p class="menu-text">Yes, your can request more coffee!</p>
+                    </details>
+
+                    <details class="dropdown-menu__form">
+                        <summary class="menu-label-wrapper">
+                            Any promo for new member when join?
+                            <svg class="control-icon control-icon-expand" width="32" height="32" role="presentation">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+                            </svg>
+                            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+                            </svg>
+                        </summary>
+                        <p class="menu-text">You will get your promo when you join.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="customers">
+            <img src="./img/customer_avatar.png" alt="img" class="customer__avatar">
+            <div class="customer__comment">
+                <img src="./img/customer_comment-stars.svg" alt="icon" class="customer__comment-stars">
+                <p class="customer__comment-text">
+                    “Lorem ipsum is typically a corrupted version of 'De finibus bonorum et malorum', a 1st century BC
+                    text by the Roman statesman and philosopher Cicero, with words altered, added.”
+                </p>
+
+                <div class="customer__name-wrapper">
+                    <p class="customer__comment-name">Owen Estrada</p>
+                    <img src="./img/wrapper-slider.svg" alt="icon" class="wrapper-slider">
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <h2 class="footer__title">
+                Don’t wait too long for a special coffee everydays
+            </h2>
+
+            <div class="footer__subscribe-form">
+                <div class="subscribe-input-wrapper">
+                    <img src="./img/input-wrapper-icon.svg" alt="icon" class="input-wrapper-icon">
+                    <input type="text" class="footer__subscribe-input" placeholder="yourmail@mail.com">
+                </div>
+                <button class="footer__subscribe-btn">Subsribe Us</button>
+            </div>
+
+            <img src="./img/footer_line.svg" alt="icon" class="footer__line">
+            <div class="footer__links">
+                <a href="#" class="footer__link">Shop</a>
+                <a href="#" class="footer__link">Our Story</a>
+                <a href="#" class="footer__link">Products</a>
+                <a href="#" class="footer__link">Contact</a>
+                <a href="#" class="footer__link">Find store</a>
+                <a href="#" class="footer__link">Press</a>
+                <a href="#" class="footer__link">Subscription</a>
+            </div>
+        </footer>
+
+    </main>
+
 </body>
 </html>
