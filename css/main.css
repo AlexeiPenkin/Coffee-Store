@@ -353,6 +353,9 @@ body {
     cursor: pointer;
     transition: transform 0.2s ease-in;
 }
+.products__card:hover {
+    border: 1px solid #FF825B;
+}
 .products__card-img:hover {
     transform: scale(1.1);
 }
